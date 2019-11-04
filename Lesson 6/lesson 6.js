@@ -9,7 +9,7 @@ if (!value || !maxValue)
 else{
 	
 	for(var i=1; i<=maxValue; i++){
-		if(!(i % value) && value != 0){
+		if(!(i % value)){
     	console.log(i);
     }
 	
@@ -19,7 +19,7 @@ else{
 	var count = 1;
 	while(count++ <= maxValue){
 
-		if  (!(count % value) && value != 0) {
+		if  (!(count % value)) {
 		console.log(count);
 		}
 
