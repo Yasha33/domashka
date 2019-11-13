@@ -1,19 +1,3 @@
-﻿
-// function first (funcCall){
-	
-
-// 	setTimeout(function() {console.log (1)}, 1000);
-  
-//  	funcCall();
-// }
-
-
-// first ( ()=> second(5,7));
-
-// function second (a, b){
-// 	console.log (a * b);
-// }
-
 var amountWords = 100,   //количество строк
 	minLetter = 1,		// минимальное количество букв в строке
 	maxLetter = 9,		// максимальное количество букв в строке
@@ -54,4 +38,3 @@ var amountWords = 100,   //количество строк
   }
 
 console.log (number (masWords));
-
