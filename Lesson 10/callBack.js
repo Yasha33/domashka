@@ -11,10 +11,8 @@
     start: function (speed) {
         var _this = this;
         this.$$runnerId = setTimeout(function callback() {
-            _this.$$tasks.forEach(function () {
-				// 
-				console.log('Hello World');
-				
+            _this.$$tasks.forEach(function (element) {               
+                element ();						
             })
             _this.$$runnerId = setTimeout(callback, speed);
         }, speed);
@@ -24,6 +22,7 @@
     }
 }
 
-runner.$$tasks.push('first task', 'second task');
+runner.add (() => console.log("Hello World"));
+runner.add (() => console.log("Hello World2"));
 runner.setSpeed (2000);
 
