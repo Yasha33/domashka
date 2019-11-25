@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 
 .circle {
@@ -16,7 +17,31 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: rgb(31, 161, 53);
     transition: 1s;
-    transform: rotate(90);
+
+
 }
+#up{
+    position: absolute;
+    top: 45%;
+}
+#down{
+    position: absolute;
+    top: 55%;
+}
+
+a{
+  color: #fff; 
+  text-decoration: none;
+  user-select: none; 
+  background: rgb(212,75,56); 
+  padding: .7em 1.5em;
+  min-width: 50px;
+  text-align: center;
+  z-index: 1;
+  right: 10%;
+
+}
+
+a:hover { background: rgb(232,95,76); }
+a:active { background: rgb(152,15,0); } 
