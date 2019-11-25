@@ -1,0 +1,22 @@
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    background: rgb(254, 254, 254);
+    background: radial-gradient(circle, rgba(254, 254, 254, 1) 0%, rgba(34, 195, 145, 1) 100%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(31, 161, 53);
+    transition: 1s;
+    transform: rotate(90);
+}
