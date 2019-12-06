@@ -1,26 +1,7 @@
-var MilitaryResource = (function () {
-    var type,
-        health,
-        maxHealth,
-        distance,
-        maxDistance;
-    return {
-        isReadyToMove: function () {
-            return (health > 0 && distance > 0);
-        },
-        isReadyToFight: function () {
-            return (health > 0);
-        },
-        restore: function (Health, Distance, Type) {
-            health = Health;
-            distance = Distance;
-            type = Type;
-        },
-        distance: function () {
-            return distance;
-        },
-        health: function () {
-            return health;
-        },
-    }
-}());
+var resource = new MilitaryResource('voin', 100, 50);
+var resource2 = resource.clone();
+var squad = new Squad([resource, resource2]);
+
+resource.type="tank";
+console.log(squad.isReadyToMove());
+var squadSecond = squad.cloneResource();
