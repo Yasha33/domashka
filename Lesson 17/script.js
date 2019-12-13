@@ -8,4 +8,4 @@ var frankenstein = new Frankenstein (10);
 
 var person = new MainUnit (100);
 
-
+person.attack(pirate);
