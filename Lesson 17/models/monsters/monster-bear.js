@@ -1,6 +1,6 @@
 var MonsterBear = (function () {
     function MonsterBear(level) {
-        Unit.call(this, 200, 500, level);
+        Unit.call(this, 200, 500, level,'MonsterBear');
     }
 
     MonsterBear.prototype = Object.create(Unit.prototype);

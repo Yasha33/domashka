@@ -1,11 +1,12 @@
-var croco = new CrocoTurtle(50);
-var bear = new MonsterBear(2);
-var pirate = new Pirate (5);
-var snake = new Snake (1);
-var ghost = new Ghost (3);
-var dragon = new Dragon (4);
-var frankenstein = new Frankenstein (10);
+var bg = new BattleGround(30);
 
-var person = new MainUnit (100);
+bg.fill([Dragon, CrocoTurtle, Monkey, Snake, MonsterBear]);
+bg.addCharacter(new Character(5));
 
+console.log(bg);
+
+var snake = new Snake(1);
+bg.area.find(el => el.type === 'Character').attack(snake);
+
+var pol = new Pole('#wrapper', bg);
 

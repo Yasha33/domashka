@@ -1,6 +1,6 @@
 var Frankenstein = (function () {
     function Frankenstein(level) {
-        Unit.call(this, 250, 500, level);
+        Unit.call(this, 250, 500, level,'Frankenstein');
     }
 
     Frankenstein.prototype = Object.create(Unit.prototype);

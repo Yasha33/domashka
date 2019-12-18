@@ -1,6 +1,6 @@
 var Ghost = (function () {
     function Ghost(level) {
-        Unit.call(this, 50, 300, level);
+        Unit.call(this, 50, 300, level,'Ghost');
     }
 
     Ghost.prototype = Object.create(Unit.prototype);
@@ -9,3 +9,4 @@ var Ghost = (function () {
 
     return Ghost;
 }());
+
