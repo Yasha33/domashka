@@ -1,3 +1,11 @@
+body{
+    background-image: url(img/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
 .wrapper{
     min-width: 1024px;
     max-width: 1400px;
@@ -9,9 +17,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     align-content: stretch;
-    background-image: url(img/6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .pole{
     width: 90%;
@@ -26,9 +32,10 @@
 
 }
 .inventory{
-    /* display: flex; */
+    display: flex; 
     width: 100%;
     height: 25%;
+    justify-content: center;
 
 }
 .cell {
@@ -36,6 +43,7 @@
     height: 20%;
     background-size: cover;
     cursor: pointer;
+    background-position: center;
 }
 .disabled{
     pointer-events: none;
@@ -49,7 +57,7 @@
 }
 
 .shopCell{
-    width: 200px;
+    flex-basis: 200px;
     height: 100%;
     display: inline-block;
     margin: 0 20px;
